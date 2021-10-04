@@ -1,0 +1,8 @@
+apps:
+  - name: fix_share_data
+    script: artisan
+    exec_mode: fork
+    interpreter: php
+    instances: 1
+    args:
+      - fix_share_data
