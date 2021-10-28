@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Console\Commands;
+namespace App\Console\Commands\Legacy;
 
 use App\Models\CompanyTrading\CompanyHoseForeignerTrading;
 use App\Models\CompanyTrading\CompanyHoseTrading;
@@ -95,7 +95,7 @@ class FixShareData extends Command
                 $datum->year_only = date("Y", strtotime($rawDatum['trading_date']));
                 $datum->month_only = date("m", strtotime($rawDatum['trading_date']));
                 $datum->day_only = date("d", strtotime($rawDatum['trading_date']));
-				
+
                 $datum->save();
 
                 echo 'CompanyUpcomTrading '. $datum->id . "\n";

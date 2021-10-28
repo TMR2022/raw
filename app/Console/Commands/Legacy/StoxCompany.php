@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Console\Commands;
+namespace App\Console\Commands\Legacy;
 
 use App\Models\StoxMongo\Industry;
 use Illuminate\Console\Command;

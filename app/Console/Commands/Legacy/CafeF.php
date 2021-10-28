@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Console\Commands;
+namespace App\Console\Commands\Legacy;
 
 use PHPHtmlParser\Dom;
 use Illuminate\Console\Command;
