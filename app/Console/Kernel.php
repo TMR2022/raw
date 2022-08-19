@@ -25,7 +25,7 @@ class Kernel extends ConsoleKernel
     protected function schedule(Schedule $schedule)
     {
         $schedule->command('copy_stox')->hourly();
-        $schedule->command('find_end_of_quarter')->monthly();
+        $schedule->command('find_end_of_quarter')->daily();
         file_put_contents('last_cronjob.txt', date("d/m/Y H:i:s", time()));
         // $schedule->command('inspire')
         //          ->hourly();
